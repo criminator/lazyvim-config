@@ -9,3 +9,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.formatoptions:remove({ "c", "r", "o" })
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "c", "cpp" },
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})
