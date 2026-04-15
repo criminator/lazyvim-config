@@ -95,12 +95,7 @@ return {
       servers = {
         -- tsserver will be automatically installed with mason and loaded with lspconfig
         tsserver = {},
-        clangd = {
-          cmd = {
-            "clangd",
-            "--query-driver=C:/mingw64/bin/g++.exe",
-          },
-        },
+        clangd = {},
       },
       -- you can do any additional lsp server setup here
       -- return true if you don't want this server to be setup with lspconfig
